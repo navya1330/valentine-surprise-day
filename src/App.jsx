@@ -146,9 +146,15 @@ const playMusic = () => {
 
     <div
       className="heart"
-      onMouseDown={startFilling}
-      onMouseUp={stopFilling}
-      onMouseLeave={stopFilling}
+      <div
+  className="heart"
+  onPointerDown={startFilling}
+  onPointerUp={stopFilling}
+  onPointerLeave={stopFilling}
+>
+  ❤️
+</div>
+
     >
       ❤️
     </div>
