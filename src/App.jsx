@@ -138,7 +138,7 @@ const playMusic = () => {
 
           {stage !== "normal" && <Confetti />}
 
-          {stage === "normal" && (
+         {stage === "normal" && (
   <>
     <img src="/dudu.png" className="mainImg" />
 
@@ -146,15 +146,9 @@ const playMusic = () => {
 
     <div
       className="heart"
-      <div
-  className="heart"
-  onPointerDown={startFilling}
-  onPointerUp={stopFilling}
-  onPointerLeave={stopFilling}
->
-  ❤️
-</div>
-
+      onPointerDown={startFilling}
+      onPointerUp={stopFilling}
+      onPointerLeave={stopFilling}
     >
       ❤️
     </div>
@@ -167,6 +161,7 @@ const playMusic = () => {
     </div>
   </>
 )}
+
 
 
           {stage === "bubu" && (
